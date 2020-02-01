@@ -62,9 +62,10 @@ Watching for fullscreen changes:
 <template>...</template>
 
 <script>
+import { AppFullscreen } from 'quasar'
 export default {
   watch: {
-    '$q.fullscreen.isActive' (val) {
+    'AppFullscreen.isActive' (val) {
       console.log(val ? 'In fullscreen now' : 'Exited fullscreen')
     }
   }
